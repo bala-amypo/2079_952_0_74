@@ -24,7 +24,7 @@ public class Student{
         this.name=name;
       }
       public String getDept(){
-        return Dept;
+        return dept;
       }
       public void setDept(String dept){
         this.dept=dept;
