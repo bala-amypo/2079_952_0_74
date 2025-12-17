@@ -3,6 +3,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.demo.entity.Student;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.example.demo.Service.StudentService;
+import java.util.list;
 @RestController
 public class StudentController{
     @Autowired
@@ -10,5 +11,9 @@ public class StudentController{
     @PostMapping("/addStudent")
     public Student addStudent(@RequestBody Student st){
         return stdser.poststudent(st);
+    }
+    @GetMapping("/getallStudents")
+    public List<Student> get(){
+        return stdrep.getAllStudents;
     }
 }
