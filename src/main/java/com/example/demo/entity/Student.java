@@ -28,5 +28,17 @@ public class Student{
       public void setDept(String dept){
         this.dept=dept;
       }
+      public LocalDate getdob(){
+        return dob;
+      }
+      public void setDob(LocalDate dob){
+        this.dob=dob;
+      }
+      public float getCgpa(){
+        return cgpa;
+      }
+      public void setCgpa(float cgpa){
+        this.cgpa=cgpa;
+      }
 
 }
