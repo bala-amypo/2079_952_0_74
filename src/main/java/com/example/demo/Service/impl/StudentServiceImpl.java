@@ -28,8 +28,8 @@ public class StudentServiceImpl implements StudentService{
               st.setId(id);
               stdrepo.save(st);  
               return "Student updated successfully";
-        }esle{
-                return "Student with ID"+
+        }else{
+                return "Student with ID"+id+" not found";
         }
     }
 }
