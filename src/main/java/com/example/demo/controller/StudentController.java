@@ -16,5 +16,9 @@ public class StudentController{
     public List<Student> get(){
         return stdser.getallstudents();
     }
-    @GetMapping("/getById")
+    @GetMapping("/getById/{id}"){
+    public Optional<Student> getById(){
+        return stdser.getById();
+    } 
+    }
 }
