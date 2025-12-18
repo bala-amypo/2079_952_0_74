@@ -5,5 +5,5 @@ public interface StudentService{
     Student poststudent(Student st);
     List<Student> getallstudents();
     Optional<Student> getById(Long id);
-    
+    String updateData(Long id,Student st);
 }
