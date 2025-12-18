@@ -1,6 +1,6 @@
 package com.example.demo.Service;
 import com.example.demo.entity.Student;
-import java.util.List;
+import java.util.*;
 public interface StudentService{
     Student poststudent(Student st);
     List<Student> getallstudents();

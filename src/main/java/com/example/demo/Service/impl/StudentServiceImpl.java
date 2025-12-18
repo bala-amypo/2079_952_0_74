@@ -4,7 +4,7 @@ import com.example.demo.Service.StudentService;
 import com.example.demo.entity.Student;
 import com.example.demo.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import java.util.List;
+import java.util.*;
 @Service
 public class StudentServiceImpl implements StudentService{
     @Autowired
@@ -16,5 +16,9 @@ public class StudentServiceImpl implements StudentService{
     @Override
     public List<Student> getallstudents(){
             return stdrepo.findAll();
+    }
+    @Override
+    public Optional<Student> getById(Long id){
+        return stdrepo.getById(id);
     }
 }
