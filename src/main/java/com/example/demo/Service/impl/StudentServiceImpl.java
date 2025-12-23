@@ -9,7 +9,6 @@ import java.util.*;
 public class StudentServiceImpl implements StudentService{
     @Autowired
     StudentRepository stdrepo;
-    @Transactional(
     @Override
     public Student poststudent(Student st){
             return stdrepo.save(st);
